@@ -28,8 +28,9 @@ const ReviewStack = createStackNavigator<StackParam>()
 
 
 const ReviewScreen = ({ state }: UniversalRouteProps) => {
-    const { loading, data, error } = state;
-    if (loading || !data) {
+    // const { loading, data, error } = state;
+    let loading, error = false
+    if (loading) {
         return <Loading />;
       } else if (error) {
         return (
@@ -68,8 +69,7 @@ export const Routes = ({reviews}: Props) => {
 }
 
 const mapStateToProps = (state: IState) => {
-    const { reviews } = state;
-    return { reviews };
+
   };
   
 export default connect(mapStateToProps, {})(Routes);
