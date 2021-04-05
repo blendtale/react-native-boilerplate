@@ -68,8 +68,7 @@ export const Routes = ({reviews}: Props) => {
 
 }
 
-const mapStateToProps = (state: IState) => {
+const mapStateToProps = (state: any) => state
 
-  };
   
 export default connect(mapStateToProps, {})(Routes);
