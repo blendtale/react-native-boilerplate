@@ -3,9 +3,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import { connect } from 'react-redux';
 
 
-
-
-
 export const Routes = () => {
     return (
         <NavigationContainer>
